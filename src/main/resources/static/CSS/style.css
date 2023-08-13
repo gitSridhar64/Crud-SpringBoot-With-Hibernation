@@ -1,0 +1,144 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Poopins', sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url('/images/blueback.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.wrapper{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background:darkcyan;
+	border:2px solid rgba(255,255,255, .5);
+	border-radius: 20px;
+	box-shadow: 0 0 30px rgba(0,0,0, .5);
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.wrapper1{
+	position: relative;
+	width: 600px;
+	height: 600px;
+	background:darkcyan;
+	border:2px solid rgba(255,255,255, .5);
+	border-radius: 20px;
+	box-shadow: 0 0 30px rgba(0,0,0, .5);
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.wrapper2{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background:gray;
+	border:2px solid rgba(255,255,255, .5);
+	border-radius: 20px;
+	box-shadow: 0 0 30px rgba(0,0,0, .5);
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.inputbox1{
+	position: relative;
+	width: 100px;
+	height: 50px;
+	margin:30px 0;
+}
+
+.table1 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+  position: fixed;
+   left: 400px;
+  height: 100px;
+  top: 90px;
+}
+
+.table1 td, .table1 th {
+  border: 2px solid #ddd;
+  padding: 8px;
+}
+
+
+.table1 th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+  background-color:olivedrab;
+  color: white;
+}
+.table1 td{
+  background-color:antiquewhite;
+  color:black;
+}
+header{
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	padding: 10px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+}
+.navigation a{
+	position: relative;
+	font-size: 1.1em;
+	color:darkblue;
+	text-decoration:none;
+	font-weight: 500;
+	margin-left: 40px;
+}
+.navigation .btn{
+	width: 123px;
+	height: 30px;
+	background:coral;
+	border: 2px solid #fff;
+	outline: none;
+	border-radius: 6px;
+	cursor:pointer;
+	font-size: 1.1em;
+	color:blue;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: .5s;
+}
+.logo{
+	font-size: 2em;
+	color: darkturquoise;
+}
+.side {
+  width: 40%;
+  position: fixed;
+   left: 1100px;
+  height: 100px;
+  top: 90px;
+}
+.side .btn{
+	width: 123px;
+	height: 30px;
+	background:mediumslateblue;
+	border: 2px solid #fff;
+	outline: none;
+	border-radius: 6px;
+	cursor:pointer;
+	font-size: 1.1em;
+	color:blue;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: .5s;
+}

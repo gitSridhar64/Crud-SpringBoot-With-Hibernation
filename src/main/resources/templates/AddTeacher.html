@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Teacher adding</title>
+<link th:href="@{/CSS/style.css}" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+			<h2 class="logo">Student Data</h2>
+			<nav class="navigation">
+				<button class="btn" onclick="window.location.href = '/ShowData'">Back</button>
+			</nav>
+		</header>
+<div class="wrapper1">
+		<div class="form-login">
+			<form action="/addTeacher" method="post">
+					<h2>Add Teacher</h2><br>
+					<div class="inputbox1">
+						<input type="teacherId" name="teacherId" placeholder="Enter teacherId here">
+						<label>teacherId </label>
+					</div>
+					<div class="inputbox1">
+						<input type="teacherName" name="teacherName" placeholder="Enter teacherName here">
+						<label>teacherName</label>
+					</div>
+					<div class="inputbox1">
+						<input type="tEmail" name="tEmail" placeholder="Enter tEmail here">
+						<label>tEmail</label>
+					</div>
+					<button type="submit" class="btn btn-primary">SUBMIT</button>
+			</form>
+		</div>
+				
+</div>
+</body>
+</html>

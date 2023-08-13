@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Marks adding</title>
+<link th:href="@{/CSS/style.css}" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+			<h2 class="logo">Student Data</h2>
+			<nav class="navigation">
+				<button class="btn" onclick="window.location.href = '/ShowData'">Back</button>
+			</nav>
+		</header>
+<div class="wrapper1">
+		<div class="form-login">
+			<form action="/addMarks" method="post">
+					<h2>Add Marks</h2><br>
+					<div class="inputbox1">
+						<input type="marksId" name="marksId" placeholder="Enter marksId here">
+						<label>marksId </label>
+					</div>
+					<div class="inputbox1">
+						<input type="subjectId" name="subjectId" placeholder="Enter subjectId here">
+						<label>subjectId</label>
+					</div>
+					<div class="inputbox1">
+						<input type="marks" name="marks" placeholder="Enter marks here">
+						<label>marks</label>
+					</div>
+					<button type="submit" class="btn btn-primary">SUBMIT</button>
+			</form>
+		</div>
+				
+</div>
+</body>
+</html>

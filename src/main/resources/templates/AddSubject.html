@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Subject adding</title>
+<link th:href="@{/CSS/style.css}" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+			<h2 class="logo">Student Data</h2>
+			<nav class="navigation">
+				<button class="btn" onclick="window.location.href = '/ShowData'">Back</button>
+			</nav>
+		</header>
+<div class="wrapper1">
+		<div class="form-login">
+			<form action="/addSubject" method="post">
+					<h2>Add Subject</h2><br>
+					<div class="inputbox1">
+						<input type="subjectId" name="subjectId" placeholder="Enter subjectId here">
+						<label>subjectId </label>
+					</div>
+					<div class="inputbox1">
+						<input type="subjectName" name="subjectName" placeholder="Enter subjectName here">
+						<label>subjectName</label>
+					</div>
+					<div class="inputbox1">
+						<input type="teacherId" name="teacherId" placeholder="Enter teacherId here">
+						<label>teacherId</label>
+					</div>
+					<button type="submit" class="btn btn-primary">SUBMIT</button>
+			</form>
+		</div>
+				
+</div>
+</body>
+</html>

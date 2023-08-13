@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Show Data</title>
+<link th:href="@{/CSS/style.css}" rel="stylesheet" />
+</head>
+<body>
+	<header>
+			<h2 class="logo">Student Data</h2>
+			<nav class="navigation">
+				<button class="btn" onclick="window.location.href = '/AddMarks'">Add Marks</button>
+				<button class="btn" onclick="window.location.href = '/AddStudent'">Add Student</button>
+				<button class="btn" onclick="window.location.href = '/AddSubject'">Add Subject</button>
+				<button class="btn" onclick="window.location.href = '/AddTeacher'">Add Teacher</button>
+				<button class="btn" onclick="window.location.href = '/showMarks'">showMarks</button>
+				<button class="btn" onclick="window.location.href = '/showTeacher'">Show Teacher</button>
+				<button class="btn" onclick="window.location.href = '/showSubject'">Show Subjects</button>
+			</nav>
+			<div class="side">
+				<button class="btn" onclick="window.location.href = '/UpdateMarks'">Update</button>
+				<button class="btn" onclick="window.location.href = '/DeleteId'">Delete</button>
+			
+			</div>
+		</header>
+<div class="wrapper2">	
+<form action="/getStudentData" method="post">
+			
+							 <div class="form-group row">
+				    <label for="studentId" class="col-sm-2 col-form-label"><h3>Enter Your Student Id</h3></label>
+				    <div class="col-sm-10"><br>
+				      <input type="studentId" class="studentId" name="studentId" placeholder="studentId">
+				    </div><br>
+				    <button type="submit" class="btn btn-primary">SUBMIT</button>
+				    </div>
+    		</form></div>
+		<table class="table1">
+	
+				<thead>
+					<tr>
+						
+						<th>Student ID</th>
+						<th>Student Name</th>
+						<th>Student Email</th>
+						<th>Subject Id</th>
+						<th>Teacher Name</th>
+						<th>Marks</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="data1: ${data}">
+						<td th:text="${data1.studentId}" />
+						<td th:text="${data1.studentName}" />
+						<td th:text="${data1.sEmail}" />
+						<td th:text="${data1.marks.subject.subjectId}" />
+						<td th:text="${data1.teacher.teacherName}" />
+						<td th:text="${data1.marks.marks}" />
+					</tr>
+				</tbody>
+				
+			</table>
+			<br>
+
+			
+
+</body>
+</html>
